@@ -1,0 +1,11 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/workout
+    username: user
+    password: 123
+    initialization-mode: always
+claim:
+  aud: fitnessapp
+jwkSetUri: http://localhost:8080/auth/realms/master/protocol/openid-connect/certs
